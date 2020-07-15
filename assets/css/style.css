@@ -2684,3 +2684,7 @@ figure.icon {
     font-weight:600;
   }
 }
+
+.learn_more{
+    border-radius: 2px !important;
+}
