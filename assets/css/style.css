@@ -737,8 +737,6 @@ p {
   -- Title
 -------------------------------------------*/
 
-.ts-title {
-}
 
 .ts-title h5 {
     font-weight: normal;
@@ -2387,7 +2385,12 @@ figure.icon {
 
 
 @media (max-width: 61.9375rem) {
-
+    .what_we_do_mobile{
+        display: block !important;
+    }
+    .mobile_disable{
+        display: none;
+    }
 }
 
 @media (min-width: 36rem) {
@@ -2415,7 +2418,7 @@ figure.icon {
     background: rgba(192, 192, 192, 0.459);
     padding: 8px;
 }
-
+/* 
 .tilt-logo {
     padding: 20px;
     width: 250px;
@@ -2505,8 +2508,10 @@ figure.icon {
 .tilt-movie, .tilt-movie img {
     width: 200px;
     height: 300px;
+} */
+.what_we_do_mobile{
+    display:none;
 }
-
 .small-button{
 
     padding: 5px !important;
@@ -2693,4 +2698,133 @@ figure.icon {
 
 a{
     font-size: 1.44em;
+}
+
+
+
+/* 
+.slide-container {
+  margin: auto;
+  width: 600px;
+  text-align: center;
+}
+
+ */
+
+.clash-card {
+  background: linear-gradient(rgba(140, 160, 149, 0.867), #46685a, #030000);
+  width: 300px;
+  display: inline-block;
+  margin: auto;
+  border-radius: 19px;
+  position: relative;
+  text-align: center;
+  box-shadow: -1px 15px 30px -12px black;
+
+}
+
+.clash-card__image {
+  position: relative;
+  height: 230px;
+  margin-bottom: 35px;
+  border-top-left-radius: 14px;
+  border-top-right-radius: 14px;
+}
+
+
+.clash-card__image--barbarian img {
+  width: 400px;
+  position: absolute;
+  top: -65px;
+  left: -40px;
+}
+
+.clash-card__level {
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 3px;
+}
+
+
+.clash-card__unit-name {
+  font-size: 30px;
+  color: rgb(255, 255, 255);
+  font-weight: 3120 !important;
+  margin-bottom: 5px;
+}
+
+.clash-card__unit-description {
+  padding: 20px;
+  margin-bottom: 10px;
+}
+
+.clash-card__unit-stats--barbarian {
+  background: #60947e !important;
+}
+.clash-card__unit-stats--barbarian .one-third {
+  border-right: 1px solid #03020025;
+}
+
+
+
+.clash-card__unit-stats {
+  color: rgb(255, 255, 255);
+  font-weight: 3200 !important;
+  border-bottom-left-radius: 14px;
+  border-bottom-right-radius: 14px;
+}
+.clash-card__unit-stats .one-third {
+  width: 33%;
+  float: left;
+  padding: 20px 15px;
+}
+.clash-card__unit-stats sup {
+  position: absolute;
+  bottom: 4px;
+  font-size: 45%;
+  margin-left: 2px;
+}
+.clash-card__unit-stats .stat {
+  position: relative;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+.clash-card__unit-stats .stat-value {
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 12px;
+}
+.clash-card__unit-stats .no-border {
+  border-right: none;
+}
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
+.slick-prev {
+  left: 100px;
+  z-index: 999;
+}
+
+.slick-next {
+  right: 100px;
+  z-index: 999;
+}
+
+.create_app_img{   
+    width:350px !important;
+    height: 350px;
+    margin-left: 35px;
+
+}
+
+.grahpic_design_img{
+    margin-top: 20px;
 }
