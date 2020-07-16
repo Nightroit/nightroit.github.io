@@ -2389,7 +2389,7 @@ figure.icon {
         display: block !important;
     }
     .mobile_disable{
-        display: none;
+        display: none !important;
     }
 }
 
