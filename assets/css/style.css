@@ -670,7 +670,7 @@ B. Helpers
   -- Shape Mask
 -------------------------------------------*/
 
-.ts-shape-mask__up:before {
+/* .ts-shape-mask__up:before {
     background-image: url("../../assets/img/bg-shape-mask-up.png");
     background-size: cover;
     content: "";
@@ -679,7 +679,7 @@ B. Helpers
     position: absolute;
     top: -0.0625rem;
     width: 100%;
-}
+} */
 
 .ts-shape-mask__down:after {
     background-image: url("../../assets/img/bg-shape-mask-down.png");
@@ -739,8 +739,10 @@ p {
 
 
 .ts-title h5 {
+    
     font-weight: normal;
     opacity: .5;
+    /* z-index: -9999 !important; */
 }
 
 /* NEW */
@@ -1708,6 +1710,7 @@ D. Plugins Styles
 
 .owl-carousel .owl-dots {
     text-align: center;
+    z-index: 121 !important;
 }
 
 .owl-carousel .owl-dots .owl-dot {
@@ -2384,20 +2387,66 @@ figure.icon {
 }
 
 
-@media (max-width: 61.9375rem) {
+@media (max-width: 77.9375rem) {
+    .below_waves
+    }
     .what_we_do_mobile{
-        display: block !important;
+        z-index: 9999 !important ;
+        margin-top: 100px  !important; 
+        display: inline !important;
     }
     .mobile_disable{
         display: none !important;
+
     }
+
+}
+.mobile_display_slider{
+    display: none !important;
+}
+@media (max-width: 56rem) {
+
+    .i_phone_2{
+        display: 150px !important;
+        width: 150px !important;
+    }
+    .mobile_display_slider{
+        height: 50px !important; 
+        width: 150px !;
+        display: block !important;
+    }
+    .mobile_img_res{
+        /* height: 80px ;
+        width: 120px ; */
+        margin-top: -20px;
+    }
+    .res_tablet{
+        /* height: 80px ;
+        width: 120px ; */
+        margin-top: -90px !important;
+    }
+    .desktop_img_res{
+        /* margin-top: 45px !important; */
+    }
+ .res_mobile{
+    height: 330px !important;
+    width: 420px !important;
+ }
+
+}
+@media (max-width: 36rem) {
+
+ .res_desktop{
+    height: 350px !important;
+    width: 490px !important;
+ }
+
 }
 
-@media (min-width: 36rem) {
- 
+.res_tablet{
+    height: 450px !important; 
+    width: 350px !important;
 }
-
-
 /* .i_phone_1{
     margin-top: 80px !important;
     height: 550px;
@@ -2712,6 +2761,7 @@ a{
  */
 
 .clash-card {
+    z-index: 1222 !important;
   background: linear-gradient(rgba(140, 160, 149, 0.867), #46685a, #030000);
   width: 300px;
   display: inline-block;
@@ -2724,6 +2774,7 @@ a{
 }
 
 .clash-card__image {
+    z-index: 122 !important;
   position: relative;
   height: 230px;
   margin-bottom: 35px;
@@ -2732,7 +2783,8 @@ a{
 }
 
 
-.clash-card__image--barbarian img {
+.clash-card__image--barbarian img {.
+    z-index: 122 !important;
   width: 400px;
   position: absolute;
   top: -65px;
@@ -2819,6 +2871,7 @@ a{
 }
 
 .create_app_img{   
+    z-index: 122 !important;
     width:350px !important;
     height: 350px;
     margin-left: 35px;

@@ -15,7 +15,7 @@
 	<title>Nightroit</title>
 
 </head>
-<body data-spy="scroll" data-target=".navbar" class="has-loading-screen" data-bg-parallax="scroll" data-bg-parallax-speed="3">
+<body data-spy="scroll" data-target=".navbar" class="has-loading-screen" data-bg-parallax="scroll" data-bg-parallax-speed="6">
     <div class="ts-page-wrapper" id="page-top">
         <!--*********************************************************************************************************-->
         <!--************ HERO ***************************************************************************************-->
@@ -23,7 +23,7 @@
         <header id="ts-hero" class="ts-full-screen">
 
             <!--NAVIGATION ******************************************************************************************-->
-            <nav class="navbar navbar_container navbar-expand-lg navbar-light fixed-top ts-separate-bg-element" data-bg-color="#fff">
+            <nav class="navbar navbar_container navbar-slide-lg= navbar-light fixed-top ts-separate-bg-element" data-bg-color="#fff">
                 <div class="container x">
                     <a class="navbar-brand" href="#page-top">
                         <img src="assets/img/logo-w.png" alt="">
@@ -93,18 +93,29 @@
         <!--*********************************************************************************************************-->
         <main id="ts-content">
 
+            
             <!--HOW IT WORKS ****************************************************************************************-->
             <section id="how-it-works" class="ts-block text-center">
                 <div class="ts-title">
                     <h1 >What we do? </h1>
                 </div>
-                <br>
-                <br>
-                <br>
+                <div id="ts-dynamic-waves" class="ts-background">
+                    <svg class="ts-svg ts-z-index__1 ts-flip-x" width="100%" height="100%" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                        <defs></defs>
+                        <path class="ts-dynamic-wave" id="wave-1" d="" data-wave-color="#fff" data-wave-height=".3" data-wave-bones="4" data-wave-speed="0.5"/>
+                    </svg>
+                    <svg class="ts-svg ts-z-index__1" width="100%" height="100%" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                        <defs></defs>
+                        <path class="ts-dynamic-wave" id="wave-2" d="" data-wave-color="#fff" data-wave-height=".3" data-wave-bones="6" data-wave-speed="0.3"/>
+                    </svg>
+                    <div class="ts-background-image ts-parallax-element" data-bg-image="assets/img/bg-blurred-run.jpg"></div>
+                </div>
+    
                 <section id="gallery" class="ts-block ts-shape-mask__up what_we_do_mobile" data-bg-color="#f7f7f7" data-bg-image="assets/img/bg-shapes.png" data-bg-size="contain" data-bg-repeat="no-repeat">
                     <div class="ts-title text-center">
-                        <h1 style = "color: white;">Gallery</h1>
+                        <h1 style = "color: white;"></h1>
                     </div>
+ 
                     <!--end ts-title-->
                     <div class="owl-carousel ts-carousel-centered py-2 mb-5" data-owl-loop="1" data-owl-nav="1" data-owl-items="3" data-owl-margin="30" data-owl-center="1">
                         <div class="slide">
@@ -133,42 +144,41 @@
                                   </div>
                           
                                 </div>
-                                </div>
+                          
+                              </div>
                           
                         </div>
-                        <div class="slide">
-                            <div class="clash-card barbarian " class="tilt tilt-logo" data-tilt data-tilt-glare="true" data-tilt-scale="1.0">
-                                <div class="clash-card__image clash-card__image--barbarian">
-                                  <img src="./assets//img/create_websites.png" alt="barbarian" />
-                                </div>
-
-                                <div class="clash-card__unit-name">Create Websites </div>
-                                <div class="clash-card__unit-description">
-                                  
-                                </div>
-                          
-                                <div class="clash-card__unit-stats clash-card__unit-stats--barbarian clearfix">
-                                  <div class="one-third">
-               
-                                    <div class="stat-value">Fully Responsive</div>
-                                  </div>
-                          
-                                  <div class="one-third">
-                                    <div class="stat-value">Light weight</div>
-                                  </div>
-                          
-                                  <div class="one-third no-border">
-                                    <div class="stat-value">Reasonable price</div>
-                                  </div>
-                          
-                                </div>
-                          
+                        <div class="clash-card barbarian "  class="tilt tilt-logo" data-tilt data-tilt-glare="true" data-tilt-scale="1.1">
+                            <div class="clash-card__image clash-card__image--barbarian">
+                              <img src="./assets//img/create-app.png" class =  "create_app_img" alt="barbarian" />
                             </div>
-                        </div>
+                    
+                            <div class="clash-card__unit-name">Create Apps </div>
+                            <div class="clash-card__unit-description">
+                              
+                            </div>
+                      
+                            <div class="clash-card__unit-stats clash-card__unit-stats--barbarian clearfix">
+                              <div class="one-third">
+           
+                                <div class="stat-value">Android</div>
+                              </div>
+                      
+                              <div class="one-third">
+                                <div class="stat-value">IOS</div>
+                              </div>
+                      
+                              <div class="one-third no-border">
+                                <div class="stat-value">React Native</div>
+                              </div>
+                      
+                            </div>
+                      
+                          </div>
                         <div class="slide">
-                            <div class="clash-card barbarian " class="tilt tilt-logo" data-tilt data-tilt-glare="true" data-tilt-scale="1.0">
+                            <div class="clash-card barbarian " class="tilt tilt-logo" data-tilt data-tilt-glare="true" data-tilt-scale="1.1">
                                 <div class="clash-card__image clash-card__image--barbarian">
-                                  <img src="./assets//img/create_websites.png" alt="barbarian" />
+                                  <img src="./assets//img/grahpic-design.png" class = "grahpic_design_img" alt="barbarian" />
                                 </div>
 
                                 <div class="clash-card__unit-name">Create Websites </div>
@@ -187,14 +197,13 @@
                                   </div>
                           
                                   <div class="one-third no-border">
-                                    <div class="stat-value">Reasonable price</div>
+                                    <div class="stat-value">Cost</div>
                                   </div>
                           
-                          
-                                </div>
                                 </div>
                           
-                        </div>
+                              </div>
+                            </div>
                         <div class="slide">
                             <div class="clash-card barbarian " class="tilt tilt-logo" data-tilt data-tilt-glare="true" data-tilt-scale="1.0">
                                 <div class="clash-card__image clash-card__image--barbarian">
@@ -378,6 +387,9 @@
                             <a  class="nav-link active" id="desktop-tab" data-toggle="tab" href="#desktop" role="tab" aria-controls="desktop" aria-selected="true">
                                 <h4>Desktop</h4>
                             </a>
+                            <br>
+                            <br>
+                            <br>
                         </li>
               
                        
@@ -397,14 +409,16 @@
                     
                     
                     <div class="tab-content pt-5 ts-tabs-presentation" id="myTabContent" data-animate="ts-fadeInUp">
-                        <div class="tab-pane fade show active" id="desktop" role="tabpanel" aria-labelledby="desktop">
-                            <img src="assets/img/img-desktop.png" class="mw-70" alt="">
-                        </div>
+                        
+                        <div></div>
+                            <div class="tab-pane fade show active" id="desktop" role="tabpanel" aria-labelledby="desktop">
+                                <img src="assets/img/img-desktop.png" class="mw-70 res_desktop" alt="">
+                            </div>
                         <div class="tab-pane fade" id="tablet" role="tabpanel" aria-labelledby="tablet">
-                            <img src="assets/img/img-tablet.png" class="mw-70" alt="">
+                            <img src="assets/img/img-tablet.png" class="mw-70 res_mobile " alt="">
                         </div>
                         <div class="tab-pane fade" id="mobile" role="tabpanel" aria-labelledby="mobile">
-                            <img src="assets/img/img-phone.png" class="mw-70" alt="">
+                            <img src="assets/img/img-phone.png" class="mw-70 res_tablet" alt="">
                         </div>
                     </div>
 
