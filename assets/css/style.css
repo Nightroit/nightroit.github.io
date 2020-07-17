@@ -2385,7 +2385,9 @@ figure.icon {
         opacity: 0;
     }
 }
-
+.mobile_disable{
+    display: block !important;
+}
 
 @media (max-width: 77.9375rem) {
     .below_waves{
