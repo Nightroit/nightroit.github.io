@@ -4,6 +4,12 @@
  * Marcelo Iván Tosco (capynet)
  * Inspired on https://stackoverflow.com/a/40658647/1413049
  * ==================================================== */
+$(document).ready(function(){
+	$('#nav-icon4').click(function(){
+		$(this).toggleClass('open');
+	});
+});
+
 !function ($) {
   'use strict'
 

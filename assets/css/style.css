@@ -2388,7 +2388,7 @@ figure.icon {
 
 
 @media (max-width: 77.9375rem) {
-    .below_waves
+    .below_waves{
     }
     .what_we_do_mobile{
         z-index: 9999 !important ;
@@ -2397,9 +2397,7 @@ figure.icon {
     }
     .mobile_disable{
         display: none !important;
-
     }
-
 }
 .mobile_display_slider{
     display: none !important;
