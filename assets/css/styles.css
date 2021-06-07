@@ -20,6 +20,12 @@
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
+
+  .nav__logo {
+      margin-left: -290px;
+      font-size: 30px;
+    }
+
 :root {
   --header-height: 3rem;
 
@@ -201,37 +207,24 @@ img{
   align-items: center;
 }
 
+
+
 @media screen and (max-width: 768px){
-  .img_main {
-    height: 250px !important;
-    width: 50px;
-    /*margin-top: 40px;*/
-  
-  }
-    .l-header {
-  box-shadow: -3px 38px 46px -32px rgba(0,0,0,0.44) !important;
-  -webkit-box-shadow: -3px 38px 46px -32px rgba(0,0,0,0.44) !important;
-  -moz-box-shadow: -3px 38px 46px -32px rgba(0,0,0,0.44) !important; 
-  }
-  .home__img {
-    margin-top: -170px !important;
-    margin-left: 500px !important;
-    left: 50%!important;
-    top: 50%!important;
-    border-radius: 40px;
-    position: absolute;
-  }
- .img__div {
+
+
+#system {
   height: 100px;
-  margin-left:-100px;
+  margin-left: -60px;
+  right: -200px;
+  margin-top: 100px;
+  position: relative;
+}
+  .nav__logo {
+      margin-left: 0px;
+    }
 
-  left: -1030px !important;
- }
-
-  .home__data {
-    justify-content: center;
-    /*width: 350px;*/
-    text-align: center;
+  .l-main {
+      text-align: center;
   }
   .nav__menu{
     position: fixed;
@@ -249,10 +242,7 @@ img{
     z-index: var(--z-fixed);
   }
 }
-.nav__logo {
-  margin-left: -260px ;
-font-size: 27px;
-}
+
 .nav__item{
   margin-bottom: var(--mb-3);
 }
@@ -260,9 +250,7 @@ font-size: 27px;
 .nav__link, .nav__logo, .nav__toggle{
   color: var(--title-color);
   font-weight: var(--font-semi-bold);
-
 }
-
 
 .nav__logo:hover{
   color: var(--first-color);
@@ -637,7 +625,6 @@ font-size: 27px;
 
 @media screen and (min-width: 768px){
 
-
   body{
     margin: 0;
   }
@@ -805,7 +792,12 @@ font-size: 27px;
 }
 
 
-
+#system {
+  left: 50%;
+  top: 50%;
+  border-radius: 40px;
+  position: absolute;
+}
 .bg-star {
   background: #fff;
   width: 1px;
