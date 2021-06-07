@@ -210,6 +210,9 @@ img{
 
 
 @media screen and (max-width: 768px){
+  .holder {
+      display: none;
+  }
 
 .ham {
   cursor: pointer;
@@ -231,7 +234,7 @@ img{
 .line {
   fill:none;
   transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
-  stroke:#000;
+  stroke:var(--text-color);
   stroke-width:2.5;
   stroke-linecap:round;
 }
@@ -678,6 +681,9 @@ img{
 }
 
 @media screen and (min-width: 768px){
+  .nav__toggle{
+    display: none;
+  }
 
   body{
     margin: 0;
@@ -704,9 +710,6 @@ img{
     margin-bottom: 0;
   }
 
-  .nav__toggle{
-    display: none;
-  }
 
   .change-theme{
     position: initial;
