@@ -38,7 +38,18 @@
                 </div>
 
                 <div class="nav__toggle" id="nav-toggle">
-                    <i class='bx bx-grid-alt'></i>
+                                       
+                <svg class="ham hamRotate ham8" viewBox="0 2 100 100" width="80" onclick="this.classList.toggle('active')">
+                  <path
+                        class="line top"
+                        d="m 30,33 h 40 c 3.722839,0 7.5,3.126468 7.5,8.578427 0,5.451959 -2.727029,8.421573 -7.5,8.421573 h -20" />
+                  <path
+                        class="line middle"
+                        d="m 30,50 h 40" />
+                  <path
+                        class="line bottom"
+                        d="m 70,67 h -40 c 0,0 -7.5,-0.802118 -7.5,-8.365747 0,-7.563629 7.5,-8.634253 7.5,-8.634253 h 20" />
+                </svg>
                 </div>
             </nav>
         </header>
@@ -50,7 +61,9 @@
                     <div class="home__img">
                         <div class = "img__div">
                         <div id="system">
-                          <div class="star">
+                          <div class="star sunButton">
+                            <span class="iconify" data-icon="clarity:cursor-hand-click-line" data-inline="false"></span>
+                            <i class='clarity-cursor-hand-click-line sunButton' id="theme-button">&nbsp;&nbsp;&nbsp;.</i>
                           </div>
                           <div class="planet r-1">
                             <div class="earth shiftbg">
@@ -77,9 +90,11 @@
                           </div>
 
                           <div class="planet r-2">
-                            <div class="comet"></div>
+                            <div class="comet">
+                                
+                            </div>
                           </div>
-
+                           
                           <div class="asteroid-belt planet" style="background: #ccc;">
                             <div class="asteroid-width" data-radius="150" data-asteroidCount="100">
                             </div>
@@ -100,7 +115,8 @@
                  <br> <br>
                     <div class="home__data">
                         <h1 class="home__title">Sophistication with beauty is our duty.</h1>
-                        <p class="home__description">We use technologies for back-end which are highly stable and optimal; thus, providing performance and security. And, design <br>front-end with keeping asthetics in mind. </p>
+                        <p class="home__description">We use technologies for the back-end which are highly stable and optimal; thus, providing performance and security. <br>And, design
+front-end with keeping aesthetics in mind. </p>
                         <a href="#decoration" class="button">Get Started</a>
                     </div>   
                 </div>
@@ -110,9 +126,27 @@
             <!--========== SHARE ==========-->
             <section class="share section bd-container" id="share">
                 <div class="share__container bd-grid">
+                    <div class="holder">
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+</div>
                     <div class="share__data">
                         <h2 class="section-title-center">We are professionals <br> You can trust.</h2>
-                        <p class="share__description">Our product is build by those who are having core understanding of networking and computer science, not millential who are pretending ;)</p>
+                        <p class="share__description">Our product is built by those who are having experience and core understanding of networking and computer science, not millennials who are pretending ;)</p>
                         <a href="whatsapp://send?abid=+918076300121&text=Hello%2C%20World!" target = "_blank" class="button">Contact us
                         </a>
                     </div>
@@ -260,6 +294,26 @@
                     </div>
                 </div>
             </section>
+    
+  
+            <br>
+   <div class="drop">
+
+                <div class="drop__card">
+                    <div class="drop__data">
+                        <img src="https://media-exp3.licdn.com/dms/image/C4E03AQH5lutXLTx9Wg/profile-displayphoto-shrink_100_100/0/1621180913152?e=1628726400&v=beta&t=C84Mg2rpM0j9XcHVG2yoiy-NsHVzPwBqlyCJAmLaWpc" alt="" class="drop__img">
+                        <div>
+                            <h1 class="drop__name">Shivam Sharma</h1>
+                            <span class="drop__profession">Our Lead Developer, who has won several awards in web development and programming.</span>
+                        </div>
+                    </div>
+
+                    <div>
+                        <a href="https://www.linkedin.com/notifications/" target = "_blank" class="drop__social"><i class='bx bxl-linkedin'></i></a>
+              
+                    </div>
+                </div>
+            </div>
 
             <!--========== SEND GIFT ==========-->
             <section class="send section">
@@ -287,17 +341,17 @@
             <div class="footer__container bd-container bd-grid">
                 <div class="footer__content">
                     <h3 class="footer__title">
-                        <a href="#" class="footer__logo">Christmas Gift</a>
+                        <a href="#" class="footer__logo">Contact</a>
                     </h3>
-                    <p class="footer__description">I sent a gift and it gives <br> happiness</p>
+                    <p class="footer__description">+918076300121
                 </div>
 
                 <div class="footer__content">
                     <h3 class="footer__title">Our Services</h3>
                     <ul>
                         <li><a href="#" class="footer__link">Pricing </a></li>
-                        <li><a href="#" class="footer__link">Discounts</a></li>
-                        <li><a href="#" class="footer__link">Shipping mode</a></li>
+                        <li><a href="#" class="footer__link">Services</a></li>
+                        <li><a href="#" class="footer__link">Timing</a></li>
                     </ul>
                 </div>
 
@@ -306,7 +360,7 @@
                     <ul>
                         <li><a href="#" class="footer__link">Blog</a></li>
                         <li><a href="#" class="footer__link">About us</a></li>
-                        <li><a href="#" class="footer__link">Our mision</a></li>
+                        <li><a href="#" class="footer__link">Our mission</a></li>
                     </ul>
                 </div>
 
@@ -314,7 +368,7 @@
                     <h3 class="footer__title">Social</h3>
                     <a href="#" class="footer__social"><i class='bx bxl-facebook-circle '></i></a>
                     <a href="#" class="footer__social"><i class='bx bxl-twitter'></i></a>
-                    <a href="#" class="footer__social"><i class='bx bxl-instagram-alt'></i></a>
+                    <a href="https://www.instagram.com/nightroit.js/" class="footer__social"><i class='bx bxl-instagram-alt'></i></a>
                 </div>
             </div>
 
