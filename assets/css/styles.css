@@ -5,7 +5,6 @@
 ::-webkit-scrollbar {
   width: 7px;
 }
-
 /* Track */
 ::-webkit-scrollbar-track {
   background: #f1f1f1;
@@ -38,7 +37,10 @@
   --text-color-light: #292828;
   --body-color: #FEFBFB;
   --container-color: #FFF;
-
+   --button-color: #0a6dda;
+  --button-color-hover:#0a6dda;
+  --box-shadow: 0 0 4px rgba(0,0,0,.1);
+  --font-color: #1e1e1e;
   /*========== Font and typography ==========*/
   font-family: 'Raleway', sans-serif;
   --biggest-font-size: 2.8rem;
@@ -80,6 +82,12 @@
   -webkit-box-shadow: -3px 38px 46px -32px rgba(0,0,0,0.44) !important;
   -moz-box-shadow: -3px 38px 46px -32px rgba(0,0,0,0.44) !important; 
   }
+
+.blur {
+  -webkit-filter: blur(3px); /* Safari 6.0 - 9.0 */
+  filter: blur(3px);
+}
+
 @media screen and (min-width: 968px){
   :root{
     --biggest-font-size: 3rem;
@@ -105,8 +113,12 @@ body.dark-theme{
   --title-color: #F3F1F1;
   --text-color: #fafafa;
   --text-color-light: #fafafa;
-  --body-color: #212121;
+  --body-color: black;
   --container-color: #595959;
+  --button-color: #fafafa;
+  --button-color-hover:#0a6dda;
+  --box-shadow: 0 0 4px white;
+  --font-color: white;
 }
 
 /*========== Button Dark/Light ==========*/
@@ -210,10 +222,17 @@ img{
 
 
 @media screen and (max-width: 768px){
-  .holder {
-      display: none;
-  }
+.holder {
+  display: none;
+}
 
+.drop__card {
+  margin-bottom: 95px !important;
+}
+
+.send__img {
+  margin: 80px 0px 80px 0px;
+}
 .ham {
   cursor: pointer;
   transition: transform 400ms;
@@ -243,7 +262,7 @@ img{
   stroke-dasharray: 40 160;
 }
 .ham8 .middle {
-  stroke-dasharray: 40 142;
+  stroke-dasharray: 40 160;
   transform-origin: 50%;
   transition: transform 400ms;
 }
@@ -288,7 +307,7 @@ img{
     text-align: center;
     background-color: var(--body-color);
     transition: .4s;
-    box-shadow: 0 0 4px rgba(0,0,0,.1);
+    box-shadow: var(--box-shadow);
     border-radius: 2rem;
     z-index: var(--z-fixed);
   }
@@ -302,7 +321,9 @@ img{
   color: var(--title-color);
   font-weight: var(--font-semi-bold);
 }
-
+.nav__link:hover{
+  color: var(--first-color);
+}
 .nav__logo:hover{
   color: var(--first-color);
 }
@@ -311,9 +332,7 @@ img{
   transition: .3s;
 }
 
-.nav__link:hover{
-  color: var(--first-color);
-}
+
 
 .nav__toggle{
   padding: 10px;
@@ -357,7 +376,7 @@ img{
   justify-content: center;
   align-items: center;
   padding: .3rem;
-  background: rgba(218,37,53,.5);
+  background: #005ccb;
   border-radius: .4rem;
   z-index: var(--z-tooltip);
   transition: .4s;
@@ -394,14 +413,15 @@ img{
   margin-bottom: var(--mb-2);
 }
 
-.home__description{
+p{
+  font-weight: 700; 
   margin-bottom: var(--mb-3);
+  font-color: var(--font-color); 
 }
 
 /*========== BUTTONS ==========*/
 .button{
-  display: inline-block;
-  background-color: var(--first-color);
+ background-color: var(--first-color);
   color: #fff;
   padding: .5rem 1rem;
   border-radius: .5rem;
@@ -413,15 +433,17 @@ img{
   background-color: var(--first-color-alt);
 }
 
+
 .button-link{
   background: none;
   padding: 0;
-  color: var(--first-color);
+  color: var(--button-color);
 }
+
 
 .button-link:hover{
   background-color: transparent;
-  color: var(--first-color-alt);
+  color: var(--button-color-hover);
 }
 
 /*========== SHARE ==========*/
@@ -1458,4 +1480,56 @@ img{
 /* Class name for the dragging item */
 .sortable-drag{
   opacity: 0;
+}
+
+
+.load {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /*change these sizes to fit into your project*/
+  width: 100px;
+  height: 100px;
+}
+.load hr {
+  border: 0;
+  margin: 0;
+  width: 40%;
+  height: 40%;
+  position: absolute;
+  border-radius: 50%;
+  animation: spin 2s ease infinite;
+}
+
+.load :first-child {
+  background: #0071ec;
+  animation-delay: -1.5s;
+}
+.load :nth-child(2) {
+  background: #09ccbf;
+  animation-delay: -1s;
+}
+.load :nth-child(3) {
+  background: #0071ec;
+  animation-delay: -0.5s;
+}
+.load :last-child {
+  background: #09ccbf;
+}
+
+@keyframes spin {
+  0%,
+  100% {
+    transform: translate(0);
+  }
+  25% {
+    transform: translate(160%);
+  }
+  50% {
+    transform: translate(160%, 160%);
+  }
+  75% {
+    transform: translate(0, 160%);
+  }
 }
